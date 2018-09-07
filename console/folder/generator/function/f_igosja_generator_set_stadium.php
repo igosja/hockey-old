@@ -13,6 +13,6 @@ function f_igosja_generator_set_stadium()
             SET `game_stadium_id`=`national_stadium_id`
             WHERE `game_played`=0
             AND FROM_UNIXTIME(`schedule_date`, '%Y-%m-%d')=CURDATE()
-            AND `schedule_tournamenttype_id`=" . TOURNAMENTTYPE_NATIONAL . "";
+            AND `schedule_tournamenttype_id`=" . TOURNAMENTTYPE_NATIONAL;
     f_igosja_mysqli_query($sql);
 }
