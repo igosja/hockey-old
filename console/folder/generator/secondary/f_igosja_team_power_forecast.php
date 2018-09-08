@@ -37,7 +37,7 @@ function f_igosja_team_power_forecast($game_result)
         {
             $sql = "SELECT `national_power_vs`
                     FROM `national`
-                    WHERE `national_id`=$team_id
+                    WHERE `national_id`=$national_id
                     LIMIT 1";
             $national_sql = f_igosja_mysqli_query($sql);
 
